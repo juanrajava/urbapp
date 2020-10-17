@@ -57,7 +57,8 @@ public class Routing {
 	private void routeHandlersBySwaggerOperationId(OpenAPI3RouterFactory routerFactory) {
 		routerFactory
 			.addHandlerByOperationId("test",
-				IoC.urbappHandler::test);
+				IoC.urbappHandler::test)
+		;
 	}
 
 	private void routeCommonsHandlers(Router router) {
