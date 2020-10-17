@@ -240,35 +240,17 @@ certs/
 src/main/resources/cdbg*
 src/main/resources/cprof*
 *.log
-**/resources/mm-ticketing-dev.json
 
-### Temp Exclude ###
-serviceentry-ericsson.yaml
 
 main.iml
-ticketing-api.iml
 src/main/main.iml
 .env
 *.iml
 .gradle
 build
-bazel-bin
-bazel-genfiles
-bazel-mas-crm
-bazel-out
-bazel-testlogs
-.ijwb/.bazelproject
-bazel-mas-stack
-mas-catalogue/build
-mas-catalogue/.ijwb/.bazelproject
-mas-catalogue/*/import.report
-watcher/.ijwb/.bazelproject
-mas-customers.ipr
-mas-ticketing/microservices/api/.ijwb/
-pkg/mas-catalogue/neo
-pkg/mas-catalogue/koha/feeder/csv
 *.ipr
-mas-catalogue/csv/
 **/gradle/
 gradlew
 gradlew.bat
+build.gradle
+settings.gradle
