@@ -1,0 +1,4 @@
+rootProject.name = 'urbapp'
+include 'core'
+include 'urbapp'
+
