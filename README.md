@@ -8,3 +8,7 @@ Backend api Urbapp.
 - RxJava
 
 ### Database info:
+
+### Help
+- swagger editor: https://editor.swagger.io/
+
