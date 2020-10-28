@@ -13,7 +13,7 @@ public class Main {
 	private static final Logger LOGGER = LoggerFactory.getLogger(Main.class.getName());
 
 	public static void main(String[] args) {
-		start(new DeploymentOptions()).subscribe(res -> LOGGER.info("Verticle running with id " + res.toLowerCase()),
+		start(new DeploymentOptions()).subscribe(res -> LOGGER.info("Verticle running with ID " + res.toLowerCase()),
 			error -> {
 				error.printStackTrace();
 				LOGGER.error("Error starting !!!!!!!! " + error.getMessage());
