@@ -58,6 +58,8 @@ public class Routing {
 		routerFactory
 			.addHandlerByOperationId("test",
 				IoC.urbappHandler::test)
+			.addHandlerByOperationId("login",
+				IoC.urbappHandler::login)
 		;
 	}
 
