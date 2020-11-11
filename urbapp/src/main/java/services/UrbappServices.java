@@ -11,6 +11,11 @@ public class UrbappServices {
 
 	public Single<Test> test() {
 
-		return Single.just(Test.builder().withValue("response ok").build());
+		return Single.just(Test.builder().withValue("ARF - Response OK").build());
+	}
+
+	public Single<Test> login() {
+
+		return Single.just(Test.builder().withValue("Login - Response OK").build());
 	}
 }
