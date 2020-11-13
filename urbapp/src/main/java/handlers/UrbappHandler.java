@@ -32,7 +32,24 @@ public class UrbappHandler {
 					.setStatusCode(HttpResponseStatus.OK.code())
 					.end(Json.encode(result));
 
-			}, err -> LOGGER.error("Failed loading data manually " + err.getMessage())
+			}, err -> LOGGER.error("Failed test " + err.getMessage())
+		);
+
+	}
+
+	public void login(RoutingContext context) {
+
+		urbappServices.login().subscribe(res -> {
+
+				JsonObject result = new JsonObject();
+				result.put("value", res.getValue());
+
+				context.response()
+					.putHeader("content-type", "application/json")
+					.setStatusCode(HttpResponseStatus.OK.code())
+					.end(Json.encode(result));
+
+			}, err -> LOGGER.error("Failed login " + err.getMessage())
 		);
 
 	}
