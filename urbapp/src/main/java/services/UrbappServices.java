@@ -14,7 +14,9 @@ public class UrbappServices {
 		return Single.just(Test.builder().withValue("ARF - Response OK").build());
 	}
 
-	public Single<Test> login() {
+	public Single<Test> login(String username) {
+
+//		usersDao.getLogin(context, username);
 
 		return Single.just(Test.builder().withValue("Login - Response OK").build());
 	}

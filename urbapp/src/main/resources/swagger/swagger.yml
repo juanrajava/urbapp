@@ -26,9 +26,16 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/TestResponse'
-  /login:
+  /login/{username}:
     get:
       operationId: login
+      parameters:
+        - name: username
+          in: path
+          description: user name
+          required: true
+          schema:
+            type: string
       responses:
         '200':
           description: successfull operation

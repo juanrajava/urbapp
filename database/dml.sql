@@ -1,0 +1,2 @@
+INSERT INTO public.users (username, password, email, created_on) VALUES('Oscar Mulero', 'pole_group', 'mulero@mulero', current_timestamp);
+INSERT INTO public.users (username, password, email, created_on) VALUES('Pepo', 'techno', 'pepo@pepo.com', current_timestamp);

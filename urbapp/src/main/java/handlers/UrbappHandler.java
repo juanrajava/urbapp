@@ -7,6 +7,7 @@ import io.vertx.core.json.Json;
 import io.vertx.core.json.JsonObject;
 import io.vertx.core.logging.Logger;
 import io.vertx.core.logging.LoggerFactory;
+import io.vertx.ext.web.api.RequestParameters;
 import io.vertx.reactivex.ext.web.RoutingContext;
 import services.UrbappServices;
 
@@ -39,7 +40,12 @@ public class UrbappHandler {
 
 	public void login(RoutingContext context) {
 
-		urbappServices.login().subscribe(res -> {
+		RequestParameters params = context.get("parsedParameters");
+		var username = params.pathParameter("username").getName();
+
+		System.out.println("trying login with username: " + username);
+
+		urbappServices.login(username).subscribe(res -> {
 
 				JsonObject result = new JsonObject();
 				result.put("value", res.getValue());
