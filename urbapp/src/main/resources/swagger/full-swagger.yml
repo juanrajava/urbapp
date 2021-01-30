@@ -1296,7 +1296,7 @@ components:
       properties:
         sipDomain:
           type: string
-          description: sip domain
+          description: sip com.urbapp.domain
         sipUser:
           type: string
           description: sip user

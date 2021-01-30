@@ -1,4 +1,4 @@
-package domain;
+package com.urbapp.core.domain;
 
 public class ErrorDto {
 	private String code;

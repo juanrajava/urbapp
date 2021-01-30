@@ -1,6 +1,6 @@
-package exceptions;
+package com.urbapp.core.exceptions;
 
-import domain.ErrorDto;
+import com.urbapp.core.domain.ErrorDto;
 
 public class BackendException extends RuntimeException {
 	private static final long serialVersionUID = 3693361283689960190L;

@@ -1,10 +1,10 @@
-package handlers;
+package com.urbapp.core.handlers;
 
-import exceptions.BackendException;
-import exceptions.BadRequestException;
-import exceptions.ResourceNotFoundException;
-import exceptions.UnauthorizedException;
-import exceptions.UnexpectedException;
+import com.urbapp.core.exceptions.BackendException;
+import com.urbapp.core.exceptions.BadRequestException;
+import com.urbapp.core.exceptions.ResourceNotFoundException;
+import com.urbapp.core.exceptions.UnauthorizedException;
+import com.urbapp.core.exceptions.UnexpectedException;
 import io.netty.handler.codec.http.HttpResponseStatus;
 import io.vertx.core.Handler;
 import io.vertx.core.json.Json;

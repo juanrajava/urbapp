@@ -1,7 +1,6 @@
-package handlers;
+package com.urbapp.core.handlers;
 
 import io.netty.handler.codec.http.HttpResponseStatus;
-import io.reactivex.Single;
 import io.vertx.core.json.JsonObject;
 import io.vertx.core.logging.Logger;
 import io.vertx.core.logging.LoggerFactory;

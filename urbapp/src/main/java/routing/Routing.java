@@ -1,6 +1,6 @@
 package routing;
 
-import handlers.DefaultErrorHandler;
+import com.urbapp.core.handlers.DefaultErrorHandler;
 import io.reactivex.Single;
 import io.vertx.core.logging.Logger;
 import io.vertx.core.logging.LoggerFactory;

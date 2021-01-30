@@ -14,6 +14,7 @@ dependencies {
     compile "io.vertx:vertx-web:$vertxVersion"
     compile "io.vertx:vertx-core:$vertxVersion"
     compile "io.vertx:vertx-rx-java2:$vertxVersion"
+    compile "io.vertx:vertx-jdbc-client:3.9.3"
     compile "io.vertx:vertx-web-api-service:$vertxVersion"
     compile "io.vertx:vertx-config:$vertxVersion"
     compile 'org.slf4j:slf4j-api:1.7.30'

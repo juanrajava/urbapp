@@ -1,0 +1,17 @@
+server:
+  host: 0.0.0.0
+  port: 8080
+health:
+  schedule_check: 6000000
+  postgres_timeout: 10
+database_reads:
+  url: jdbc:postgresql//0.0.0.0:5432/postgres
+  provider_class: io.vertx.ext.jdbc.spi.impl.C3P0DataSourceProvider
+  driver_class: org.postgresql.Driver
+  max_idle_time: 10
+  initial_pool_size: 10
+  max_pool_size: 30
+  acquire_retry_attempts: 3
+dbCredentialsReads:
+  user: postgres
+  password: postgres

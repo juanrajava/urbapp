@@ -1,6 +1,7 @@
 package services;
 
-import domain.Test;
+import com.urbapp.core.domain.Test;
+import com.urbapp.core.domain.Users;
 import io.reactivex.Single;
 import io.vertx.core.logging.Logger;
 import io.vertx.core.logging.LoggerFactory;
@@ -14,10 +15,14 @@ public class UrbappServices {
 		return Single.just(Test.builder().withValue("ARF - Response OK").build());
 	}
 
-	public Single<Test> login(String username) {
+	public Single<Users> login(String username) {
 
 //		usersDao.getLogin(context, username);
 
-		return Single.just(Test.builder().withValue("Login - Response OK").build());
+		return Single.just(Users.builder()
+			.withId(1)
+			.withUsername("Juan")
+			.withEmail("juan@juan.com")
+			.build());
 	}
 }

@@ -1,4 +1,4 @@
-package exceptions;
+package com.urbapp.core.exceptions;
 
 import io.netty.handler.codec.http.HttpResponseStatus;
 

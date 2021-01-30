@@ -1,4 +1,4 @@
-package exceptions;
+package com.urbapp.core.exceptions;
 
 public enum ErrorCodes {
 	BAD_GATEWAY_EXCEPTION_CODE("0016", "BAD_GATEWAY", "Bad Gateway"),

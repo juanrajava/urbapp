@@ -1,6 +1,4 @@
-package domain;
-
-import java.util.Set;
+package com.urbapp.core.domain;
 
 public class Test {
 
